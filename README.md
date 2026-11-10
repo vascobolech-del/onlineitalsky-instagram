@@ -1,6 +1,6 @@
 # Online Italsky – automatické příspěvky na Instagram
 
-Každý den kolem 18:00 (Praha) se samo spustí `scripts/publish.py`. Pokud v souboru `prispevky.json` nastal termín dalšího příspěvku, zveřejní ho na @onlineitalsky a zapíše do `odeslano.json`.
+Každý den kolem 18:00 (Praha) se samo spustí `scripts/publish.py`. Pokud v souboru `prispevky.json` nastal termín dalšího příspěvku, zveřejní ho na Instagramu @onlineitalsky, hned potom stejný příspěvek na facebookové stránce Online Italsky a obojí zapíše do `odeslano.json`.
 
 ## Jednorázové nastavení
 1. **Settings → Secrets and variables → Actions → New repository secret**: název `IG_TOKEN`, hodnota = token systémového uživatele z Meta Business (platnost „Nikdy“).
@@ -17,6 +17,8 @@ Každý den kolem 18:00 (Praha) se samo spustí `scripts/publish.py`. Pokud v so
 - Nejvýš jeden příspěvek denně. Když se nějaký termín zmešká (např. kvůli neplatnému tokenu), doběhne další den.
 - Před zveřejněním se kontroluje, že stejný příspěvek už na profilu není.
 - Když se zveřejnění nepovede, běh skončí chybou a GitHub pošle e-mail.
+- Když se nepovede Facebook (Instagram už vyšel), skript to zkusí ještě dvakrát při dalších bězích.
+- Facebook lze vypnout: Settings → Secrets and variables → Actions → Variables → `FACEBOOK` = `0`.
 - Repozitář musí zůstat **Public**: Instagram si obrázky stahuje z veřejné adresy.
 
 ## Rozpis
