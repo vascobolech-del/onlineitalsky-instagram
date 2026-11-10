@@ -1,0 +1,418 @@
+[
+ {
+  "id": 1,
+  "datum": "2026-11-17 18:00",
+  "filename": "01_la-chiave.jpg",
+  "title_it": "LA CHIAVE",
+  "caption": "LA CHIAVE znamená klíč. Skupina CHI má tvrdé K, takže tu nečteme české „ch“. La chiave è sul tavolo. = Klíč je na stole. Zkus tu větu říct nahlas.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. LA CHIAVE — klíč"
+ },
+ {
+  "id": 2,
+  "datum": "2026-11-25 18:00",
+  "filename": "02_boh.jpg",
+  "title_it": "BOH",
+  "caption": "Boh je krátké hovorové „nevím“ nebo „netuším“. Neutrálněji řekneš Non lo so. V krátké zprávě může samotné Boh působit odměřeně, takže záleží i na tónu. Jak bys odpověděl/a na Dove sono le chiavi? — Kde jsou klíče?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. BOH — Nevím. Netuším."
+ },
+ {
+  "id": 3,
+  "datum": "2026-12-03 18:00",
+  "filename": "03_pesce-pesche.jpg",
+  "title_it": "PESCE / PESCHE",
+  "caption": "PESCE je ryba, PESCHE jsou broskve. V prvním slově zní SC přibližně jako české Š, ve druhém SCH jako SK. Compro due pesche. = Kupuju dvě broskve. Zkus obě slova vyslovit za sebou.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. PESCE / PESCHE — ryba, nebo broskve?"
+ },
+ {
+  "id": 4,
+  "datum": "2026-12-11 18:00",
+  "filename": "04_magari.jpg",
+  "title_it": "MAGARI!",
+  "caption": "Magari! umí nadšeně přijmout nabídku i vyjádřit nesplněné přání. Vuoi venire con noi al lago? — Magari! znamená „Chceš s námi k jezeru? — To bych moc rád/a!“ Ve větě Magari sta dormendo ale znamená „Možná spí“. Kterou nabídku bys přijal/a nadšeným Magari!?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. MAGARI! — Kéž by! / To bych bral/a!"
+ },
+ {
+  "id": 5,
+  "datum": "2026-12-15 18:00",
+  "filename": "05_gli-gnocchi.jpg",
+  "title_it": "GLI GNOCCHI",
+  "caption": "GLI GNOCCHI jsou noky. GN vyslovíme jako jeden zvuk blízký českému Ň, bez samostatného G; CH pak zachovává tvrdé K. Mangio gli gnocchi. = Jím noky. Přečti si svou příští objednávku nahlas.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. GLI GNOCCHI — noky"
+ },
+ {
+  "id": 6,
+  "datum": "2026-12-23 18:00",
+  "filename": "06_ma-dai.jpg",
+  "title_it": "MA DAI!",
+  "caption": "Ma dai! může být překvapené „Fakt?“ i nevěřícné „Ale jdi!“ Na Ho vinto due biglietti. — „Vyhrál/a jsem dva lístky.“ můžeš reagovat Ma dai, davvero? Stejná slova s ostrým tónem mohou tvrzení odmítat. Zkus je říct jednou nadšeně a jednou pochybovačně.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. MA DAI! — Fakt? / Ale jdi!"
+ },
+ {
+  "id": 7,
+  "datum": "2026-12-30 18:00",
+  "filename": "07_nono-nonno.jpg",
+  "title_it": "NONO / NONNO",
+  "caption": "NONO znamená devátý, NONNO dědeček. Dvojité N není ozdoba: souhláska musí trvat déle, bez vložené samohlásky. Il nonno aspetta. = Dědeček čeká. Zkus oba výrazy nahlas a hlídej délku N.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. NONO / NONNO — devátý, nebo dědeček?"
+ },
+ {
+  "id": 8,
+  "datum": "2027-01-08 18:00",
+  "filename": "08_sono-alla-frutta.jpg",
+  "title_it": "SONO ALLA FRUTTA",
+  "caption": "Sono alla frutta znamená v přeneseném významu „Jsem na konci sil“. Doslova je ve větě ovoce, ale po náročném dni jde často o únavu a nadsázku. Dopo dodici ore di lavoro sono alla frutta. — Po dvanácti hodinách práce jsem úplně vyřízený/á. Kdy by se tahle věta hodila tobě?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. SONO ALLA FRUTTA — Jsem na konci sil."
+ },
+ {
+  "id": 9,
+  "datum": "2027-01-12 18:00",
+  "filename": "09_e-e.jpg",
+  "title_it": "E / È",
+  "caption": "E znamená „a“, È znamená „je“. Anna e Luca = Anna a Luca; Anna è qui = Anna je tady. Přízvukovou značku potřebuje i velké È. Doplň: La pizza … buona. Co sem patří?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. E / È — jedna značka, jiný význam"
+ },
+ {
+  "id": 10,
+  "datum": "2027-01-20 18:00",
+  "filename": "10_mi-dai-una-mano.jpg",
+  "title_it": "MI DAI UNA MANO?",
+  "caption": "Dare una mano znamená pomoct. Mi dai una mano con queste scatole? — Pomůžeš mi s těmihle krabicemi? Činnost může následovat po a: Ti do una mano a preparare la cena. — Pomůžu ti připravit večeři. S čím bys dnes požádal/a o pomoc?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. MI DAI UNA MANO? — Pomůžeš mi?"
+ },
+ {
+  "id": 11,
+  "datum": "2027-01-28 18:00",
+  "filename": "11_un-po.jpg",
+  "title_it": "UN PO’",
+  "caption": "UN PO’ znamená trochu a vzniklo z un poco. Správně píšeme apostrof, nikoli „un pò“. Un po’ di italiano = trochu italštiny. Doplň si vlastní spojení: un po’ di…\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. UN PO’ — trochu"
+ },
+ {
+  "id": 12,
+  "datum": "2027-02-05 18:00",
+  "filename": "12_un-pesce-fuor-dacqua.jpg",
+  "title_it": "UN PESCE FUOR D’ACQUA",
+  "caption": "Mi sento un pesce fuor d’acqua. — Cítím se jako ryba na suchu. Tohle spojení popisuje pocit, že do prostředí nezapadáš. Un pesce zůstává stejné i tehdy, když větu říká žena. V jaké situaci bys ho použil/a?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. UN PESCE FUOR D’ACQUA — Jako ryba na suchu."
+ },
+ {
+  "id": 13,
+  "datum": "2027-02-09 18:00",
+  "filename": "13_la-mano.jpg",
+  "title_it": "LA MANO",
+  "caption": "LA MANO je ruka. Koncovka -O tentokrát neznamená mužský rod: říkáme la mano fredda, tedy studená ruka. Nová podstatná jména si ukládej i se členem. Zkus si vybavit další slovo s LA.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. LA MANO — ruka"
+ },
+ {
+  "id": 14,
+  "datum": "2027-02-17 18:00",
+  "filename": "14_meglio-tardi-che-mai.jpg",
+  "title_it": "MEGLIO TARDI CHE MAI",
+  "caption": "Meglio tardi che mai známe i česky: lépe pozdě než nikdy. Hai finalmente risposto, meglio tardi che mai. — Konečně jsi odpověděl/a, lépe pozdě než nikdy. Může to být laskavé povzbuzení i lehká výčitka. Komu bys tuhle větu řekl/a s úsměvem?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. MEGLIO TARDI CHE MAI — Lépe pozdě než nikdy."
+ },
+ {
+  "id": 15,
+  "datum": "2027-02-25 18:00",
+  "filename": "15_due-caffe.jpg",
+  "title_it": "DUE CAFFÈ",
+  "caption": "Jedna káva? Un caffè. Dvě kávy? Due caffè. Podstatné jméno zůstává stejné, ale okolní slova se mění: i caffè sono caldi = kávy jsou horké. Jak si objednáš tři kávy?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. DUE CAFFÈ — dvě kávy"
+ },
+ {
+  "id": 16,
+  "datum": "2027-03-05 18:00",
+  "filename": "16_cioe.jpg",
+  "title_it": "CIOÈ",
+  "caption": "Cioè ti pomůže vysvětlit nebo opravit vlastní slova. Arrivo alle otto, cioè alle otto e mezza. — Dorazím v osm, vlastně v půl deváté. Samostatné Cioè? může znamenat „Jak to myslíš?“ Zkus s cioè opravit čas své schůzky.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. CIOÈ — Tedy / vlastně / totiž."
+ },
+ {
+  "id": 17,
+  "datum": "2027-03-09 18:00",
+  "filename": "17_vecchio-amico-amico-vecchio.jpg",
+  "title_it": "VECCHIO AMICO / AMICO VECCHIO",
+  "caption": "UN VECCHIO AMICO je dávný kamarád, kterého znáš už dlouho. UN AMICO VECCHIO zdůrazňuje, že je kamarád starý věkem. U slova vecchio tedy pořadí mění význam. Jak bys popsal/a kamaráda ze školy?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. VECCHIO AMICO / AMICO VECCHIO — záleží na pořadí"
+ },
+ {
+  "id": 18,
+  "datum": "2027-03-17 18:00",
+  "filename": "18_figurati.jpg",
+  "title_it": "FIGURATI!",
+  "caption": "Na poděkování můžeš mezi známými odpovědět Figurati! — Není zač, ale prosím tě! Při vykání použij Si figuri! Další krátká možnost je Di niente! Jak bys odpověděl/a kamarádovi na Grazie per l’aiuto? — Díky za pomoc?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. FIGURATI! — Není zač!"
+ },
+ {
+  "id": 19,
+  "datum": "2027-03-25 18:00",
+  "filename": "19_brava.jpg",
+  "title_it": "BRAVA!",
+  "caption": "BRAVA! řekneš ženě, které se něco povedlo. Muže pochválíš BRAVO!, skupinu mužů nebo smíšenou skupinu BRAVI! a skupinu žen BRAVE! Pochvala se přizpůsobuje tomu, koho chválíš. Jak pochválíš svou učitelku?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. BRAVA! — Výborně! / Jsi šikovná!"
+ },
+ {
+  "id": 20,
+  "datum": "2027-04-02 18:00",
+  "filename": "20_puo-ripetere-per-favore.jpg",
+  "title_it": "PUÒ RIPETERE, PER FAVORE?",
+  "caption": "Può ripetere, per favore? zachrání rozhovor, když ti něco unikne. Známému řekni Puoi ripetere, per favore? Pokud potřebuješ jen cenu, zeptej se Può ripetere il prezzo? — Můžete zopakovat cenu? Přečti si obě zdvořilé varianty nahlas.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. PUÒ RIPETERE, PER FAVORE? — Můžete to prosím zopakovat?"
+ },
+ {
+  "id": 21,
+  "datum": "2027-04-06 18:00",
+  "filename": "21_bellissimo.jpg",
+  "title_it": "BELLISSIMO",
+  "caption": "BELLISSIMO znamená velmi krásný, nádherný. Když ale vybíráš nejkrásnějšího ze skupiny, použiješ IL PIÙ BELLO. Il giardino è bellissimo. = Zahrada je nádherná. Co ti v Itálii připadá bellissimo?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. BELLISSIMO — nádherný"
+ },
+ {
+  "id": 22,
+  "datum": "2027-04-14 18:00",
+  "filename": "22_da-portare-via.jpg",
+  "title_it": "DA PORTARE VIA",
+  "caption": "Da portare via, per favore. — S sebou, prosím. Tuhle větu využiješ při objednávání v baru. Na místě můžeš říct Consumiamo qui. — Dáme si to tady. Jak si dáš příští kávu: qui, nebo da portare via?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. DA PORTARE VIA — S sebou."
+ },
+ {
+  "id": 23,
+  "datum": "2027-04-22 18:00",
+  "filename": "23_qualche-giorno.jpg",
+  "title_it": "QUALCHE GIORNO",
+  "caption": "QUALCHE GIORNO znamená několik dní, i když giorno je v jednotném čísle. Stejně funguje qualche domanda = několik otázek. Resto qui qualche giorno. = Zůstanu tady několik dní. Doplň: qualche amico, nebo qualche amici?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. QUALCHE GIORNO — několik dní"
+ },
+ {
+  "id": 24,
+  "datum": "2027-04-30 18:00",
+  "filename": "24_cosa-ci-consiglia.jpg",
+  "title_it": "COSA CI CONSIGLIA?",
+  "caption": "Cosa ci consiglia? — Co nám doporučujete? Když se ptáš sám/sama za sebe, změň ci na mi: Cosa mi consiglia? Po doporučení můžeš navázat Allora prendo quello, grazie. — Tak si dám to, děkuji. Jak se zeptáš na doporučení pro sebe?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. COSA CI CONSIGLIA? — Co nám doporučujete?"
+ },
+ {
+  "id": 25,
+  "datum": "2027-05-04 18:00",
+  "filename": "25_a-roma-in-italia.jpg",
+  "title_it": "A ROMA / IN ITALIA",
+  "caption": "Říkáme A ROMA a IN ITALIA. Vado a Roma = jedu do Říma, sono a Roma = jsem v Římě. Předložku tedy nevybíráme jen podle českého „do“ nebo „v“. Kam bys chtěl/a vyrazit: a Roma, nebo in Toscana?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. A ROMA / IN ITALIA — město a země"
+ },
+ {
+  "id": 26,
+  "datum": "2027-05-12 18:00",
+  "filename": "26_basta-cosi-grazie.jpg",
+  "title_it": "BASTA COSÌ, GRAZIE.",
+  "caption": "Altro? — Ještě něco? Pokud máš nákup hotový, odpověz No, basta così, grazie. — Ne, to je všechno, děkuji. České „to bude všechno“ tu nepotřebuje italský budoucí čas. Vyzkoušej si tenhle krátký rozhovor nahlas.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. BASTA COSÌ, GRAZIE. — To je všechno, děkuji."
+ },
+ {
+  "id": 27,
+  "datum": "2027-05-20 18:00",
+  "filename": "27_lunedi-il-lunedi.jpg",
+  "title_it": "LUNEDÌ / IL LUNEDÌ",
+  "caption": "LUNEDÌ LAVORO může v plánu znamenat „v pondělí pracuji“. IL LUNEDÌ LAVORO běžně popisuje zvyk: „každé pondělí pracuji“. Jeden krátký člen mění pohled na kalendář. Co pravidelně děláš il lunedì?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. LUNEDÌ / IL LUNEDÌ — jednou, nebo pravidelně?"
+ },
+ {
+  "id": 28,
+  "datum": "2027-05-28 18:00",
+  "filename": "28_posso-andarci-a-piedi.jpg",
+  "title_it": "POSSO ANDARCI A PIEDI?",
+  "caption": "Posso andarci a piedi? — Můžu tam dojít pěšky? Nejprve pojmenuj cíl; ci pak znamená „tam“. A piedi je pěšky a Sono circa dieci minuti a piedi znamená „Je to asi deset minut pěšky“. Ke kterému místu by ses takhle zeptal/a?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. POSSO ANDARCI A PIEDI? — Můžu tam dojít pěšky?"
+ },
+ {
+  "id": 29,
+  "datum": "2027-06-01 18:00",
+  "filename": "29_sono-le-sei-e-mezzo.jpg",
+  "title_it": "SONO LE SEI E MEZZO.",
+  "caption": "SONO LE SEI E MEZZO znamená „je půl sedmé“, tedy 6:30. Italština vychází ze šesté hodiny a přidá půlku; čeština už jmenuje sedmou. Správná je také podoba e mezza. Jak řekneš 8:30?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. SONO LE SEI E MEZZO. — Je půl sedmé. (6:30)"
+ },
+ {
+  "id": 30,
+  "datum": "2027-06-09 18:00",
+  "filename": "30_a-che-binario.jpg",
+  "title_it": "A CHE BINARIO?",
+  "caption": "A che binario? je krátký nádražní dotaz, když už oba víte, o kterém vlaku mluvíte. Celá otázka může znít Da quale binario parte il treno? — Od které koleje odjíždí vlak? Binario je kolej, banchina nástupiště jako prostor pro cestující. Co budeš hledat na tabuli odjezdů?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. A CHE BINARIO? — U které koleje?"
+ },
+ {
+  "id": 31,
+  "datum": "2027-06-17 18:00",
+  "filename": "31_ho-sonno.jpg",
+  "title_it": "HO SONNO.",
+  "caption": "HO SONNO znamená „chce se mi spát“. Italština tu používá avere, tedy mít, podobně jako v ho fame = mám hlad. Pozor na dvě N: sono je naopak slovesný tvar „jsem“ nebo „jsou“. Máš dnes spíš sonno, nebo fame?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. HO SONNO. — Chce se mi spát."
+ },
+ {
+  "id": 32,
+  "datum": "2027-06-25 18:00",
+  "filename": "32_posso-pagare-con-la-carta.jpg",
+  "title_it": "POSSO PAGARE CON LA CARTA?",
+  "caption": "Posso pagare con la carta? — Můžu zaplatit kartou? Pro hotovost použij jiné spojení: Pago in contanti. — Zaplatím v hotovosti. Předložky si zapamatuj rovnou s celou frází. Jak bys řekl/a, že zaplatíš hotově?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. POSSO PAGARE CON LA CARTA? — Můžu zaplatit kartou?"
+ },
+ {
+  "id": 33,
+  "datum": "2027-06-29 18:00",
+  "filename": "33_sto-bene.jpg",
+  "title_it": "STO BENE.",
+  "caption": "Na COME STAI? můžeš odpovědět STO BENE, GRAZIE. = Mám se dobře, děkuji. Bene se nemění podle rodu, takže odpověď je stejná pro muže i ženu. Zkus odpovědět nahlas: Come stai?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. STO BENE. — Mám se dobře."
+ },
+ {
+  "id": 34,
+  "datum": "2027-07-07 18:00",
+  "filename": "34_pronto.jpg",
+  "title_it": "PRONTO?",
+  "caption": "Při zvednutí telefonu v italštině zazní Pronto? V hovoru to přeložíš jako „Haló?“ Pokračovat můžeš Pronto, buongiorno, sono Eva. — Haló, dobrý den, tady Eva. Doplň své jméno a zkus se představit po telefonu.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. PRONTO? — Haló?"
+ },
+ {
+  "id": 35,
+  "datum": "2027-07-15 18:00",
+  "filename": "35_mi-piace-mi-piacciono.jpg",
+  "title_it": "MI PIACE / MI PIACCIONO",
+  "caption": "MI PIACE LA PIZZA = mám rád pizzu. MI PIACCIONO I FUNGHI = mám rád houby. Tvar slovesa vybírá pizza nebo houby, ne člověk, kterému chutnají. Zkus doplnit: Mi … i film italiani.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. MI PIACE / MI PIACCIONO — co se ti líbí?"
+ },
+ {
+  "id": 36,
+  "datum": "2027-07-23 18:00",
+  "filename": "36_ti-va-di-venire.jpg",
+  "title_it": "TI VA DI VENIRE?",
+  "caption": "Ti va di venire? — Nechceš přijít? Po ti va di použij infinitiv: Ti va di prendere un caffè? — Nechceš zajít na kávu? Přijetí může být krátké Volentieri! — Rád/a! Koho pozveš a kam?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. TI VA DI VENIRE? — Nechceš přijít?"
+ },
+ {
+  "id": 37,
+  "datum": "2027-07-27 18:00",
+  "filename": "37_ce-ci-sono.jpg",
+  "title_it": "C’È / CI SONO",
+  "caption": "C’È UN TAVOLO = je tu stůl. CI SONO DUE SEDIE = jsou tu dvě židle. Když popisuješ, co někde je, hlídej jednotné a množné číslo. Rozhlédni se a vytvoř jednu větu o svém pokoji.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. C’È / CI SONO — je tu / jsou tu"
+ },
+ {
+  "id": 38,
+  "datum": "2027-08-04 18:00",
+  "filename": "38_latte-caffellatte.jpg",
+  "title_it": "LATTE / CAFFELLATTE",
+  "caption": "Latte je v italštině mléko. Kávu s mlékem můžeš pojmenovat caffellatte. Anglické kavárenské „a latte“ proto nepřenášej do italštiny automaticky. Co znamená Compro un litro di latte?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. LATTE / CAFFELLATTE — Mléko / káva s mlékem."
+ },
+ {
+  "id": 39,
+  "datum": "2027-08-12 18:00",
+  "filename": "39_volevo-chiederti-una-cosa.jpg",
+  "title_it": "VOLEVO CHIEDERTI UNA COSA.",
+  "caption": "VOLEVO CHIEDERTI UNA COSA může uvádět otázku, kterou chceš položit právě teď. Minulý tvar volevo v takové situaci žádost zjemňuje, podobně jako české „chtěl jsem se zeptat“. O významu rozhoduje kontext. Zkus touhle větou začít krátký rozhovor.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. VOLEVO CHIEDERTI UNA COSA. — Chtěl jsem se tě na něco zeptat."
+ },
+ {
+  "id": 40,
+  "datum": "2027-08-20 18:00",
+  "filename": "40_mi-sveglio-mi-alzo.jpg",
+  "title_it": "MI SVEGLIO / MI ALZO",
+  "caption": "Mi sveglio znamená „Probouzím se“, mi alzo „Vstávám“. Mi sveglio alle sette, ma mi alzo alle sette e un quarto. — Budím se v sedm, ale vstávám až ve čtvrt na osm. Dva různé okamžiky, dvě různá slovesa. Jak velká mezera je mezi nimi u tebe?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. MI SVEGLIO / MI ALZO — Probouzím se / vstávám."
+ },
+ {
+  "id": 41,
+  "datum": "2027-08-24 18:00",
+  "filename": "41_sara-a-casa.jpg",
+  "title_it": "SARÀ A CASA.",
+  "caption": "SARÀ A CASA může být domněnka o přítomnosti („Asi je doma.“) i informace o budoucnosti („Bude doma.“). Dov’è Luca? — Sarà a casa. = Kde je Luca? — Asi je doma. Domani sarà a casa. = Zítra bude doma. Rozhoduje kontext.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. SARÀ A CASA. — Asi je doma. / Bude doma."
+ },
+ {
+  "id": 42,
+  "datum": "2027-09-01 18:00",
+  "filename": "42_genitori-parenti.jpg",
+  "title_it": "GENITORI / PARENTI",
+  "caption": "I genitori jsou rodiče, i parenti příbuzní. I miei genitori vivono vicino ai miei nonni. — Moji rodiče bydlí blízko mých prarodičů. Podobnost s anglickým parents může mást, proto si dvojici zapamatuj i česky. Jak řekneš „moji rodiče“?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. GENITORI / PARENTI — Rodiče / příbuzní."
+ },
+ {
+  "id": 43,
+  "datum": "2027-09-09 18:00",
+  "filename": "43_potresti-aspettare.jpg",
+  "title_it": "POTRESTI ASPETTARE?",
+  "caption": "POTRESTI ASPETTARE? je zdvořilé „mohl bys počkat?“ nebo „mohla bys počkat?“. Při vykání jedné osobě použij POTREBBE ASPETTARE? Přidat můžeš per favore, prosím. Zkus stejnou prosbu jednou s tykáním a jednou s vykáním.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. POTRESTI ASPETTARE? — Mohl bys / mohla bys počkat?"
+ },
+ {
+  "id": 44,
+  "datum": "2027-09-17 18:00",
+  "filename": "44_camera-videocamera.jpg",
+  "title_it": "CAMERA / VIDEOCAMERA",
+  "caption": "Una camera doppia je dvoulůžkový pokoj. Na natáčení si vezmeš una videocamera, nikoli hotelový pokoj. Podobná česká a italská slova tě tady mohou snadno zmást. Co znamená Ho prenotato una camera?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. CAMERA / VIDEOCAMERA — Pokoj / videokamera."
+ },
+ {
+  "id": 45,
+  "datum": "2027-09-21 18:00",
+  "filename": "45_non-ancora-non-piu.jpg",
+  "title_it": "NON ANCORA / NON PIÙ",
+  "caption": "NON ANCORA znamená „ještě ne“, NON PIÙ „už ne“. Non ho ancora mangiato = ještě jsem nejedl; non lavoro più = už nepracuji. V celé větě se spojení rozdělí kolem slovesa. Jak odpovíš na „Už jsi jedl?“, když tě jídlo teprve čeká?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. NON ANCORA / NON PIÙ — ještě ne, nebo už ne?"
+ },
+ {
+  "id": 46,
+  "datum": "2027-09-29 18:00",
+  "filename": "46_al-banco-al-tavolo.jpg",
+  "title_it": "AL BANCO / AL TAVOLO",
+  "caption": "Al banco znamená „u pultu“, al tavolo „u stolu“. Prendiamo un caffè al banco. — Dáme si kávu u pultu. Italský bar může sloužit i k ranní snídani nebo rychlé kávě během dne. Kam zamíříš ty: al banco, nebo al tavolo?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. AL BANCO / AL TAVOLO — U pultu / u stolu."
+ },
+ {
+  "id": 47,
+  "datum": "2027-10-07 18:00",
+  "filename": "47_sto-per-partire.jpg",
+  "title_it": "STO PER PARTIRE.",
+  "caption": "STO PER PARTIRE znamená „za chvíli odjíždím“ nebo „každou chvíli odjedu“. Vazba stare per + infinitiv ukazuje blízký začátek děje. Il treno sta per partire. = Vlak každou chvíli odjede. Zkus říct, co se právě chystáš udělat.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. STO PER PARTIRE. — Za chvíli odjíždím."
+ },
+ {
+  "id": 48,
+  "datum": "2027-10-15 18:00",
+  "filename": "48_laperitivo.jpg",
+  "title_it": "L’APERITIVO",
+  "caption": "Aperitivo může označovat nápoj před jídlem i společné setkání. Ci vediamo per un aperitivo dopo il lavoro. — Uvidíme se po práci na aperitivu. Občerstvení záleží na nabídce podniku a vybrat si můžeš i nealkoholický nápoj. S kým bys zašel/zašla na aperitivo?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. L’APERITIVO — Aperitiv i setkání před večeří."
+ },
+ {
+  "id": 49,
+  "datum": "2027-10-19 18:00",
+  "filename": "49_ce-lho.jpg",
+  "title_it": "CE L’HO.",
+  "caption": "HAI LA CHIAVE? — SÌ, CE L’HO. = Máš klíč? — Ano, mám ho. CE L’HO používáme, když je z rozhovoru jasné, o které jedné věci mluvíme. Záporně řekneš NON CE L’HO. Zkus obě odpovědi nahlas.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. CE L’HO. — Mám ho. / Mám ji. / Mám to."
+ },
+ {
+  "id": 50,
+  "datum": "2027-10-27 18:00",
+  "filename": "50_primo-secondo.jpg",
+  "title_it": "PRIMO / SECONDO",
+  "caption": "Primo je první chod, například těstoviny, rizoto nebo polévka. Secondo je druhý chod, například maso nebo ryba; příloha je contorno. Nabídka chodů neznamená, že si musíš objednat všechny. Kam bys v menu zařadil/a risotto ai funghi?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. PRIMO / SECONDO — první chod / druhý chod"
+ },
+ {
+  "id": 51,
+  "datum": "2027-11-04 18:00",
+  "filename": "51_ce-lho-fatta.jpg",
+  "title_it": "CE L’HO FATTA!",
+  "caption": "CE L’HO FATTA! řekneš, když se ti něco podaří zvládnout. Tvar FATTA zůstává stejný pro muže i ženu: je součástí ustáleného slovesa farcela. V přítomnosti můžeš říct CE LA FACCIO = zvládnu to. Co se ti naposledy povedlo?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. CE L’HO FATTA! — Zvládl jsem to! / Zvládla jsem to!"
+ },
+ {
+  "id": 52,
+  "datum": "2027-11-12 18:00",
+  "filename": "52_la-sagra.jpg",
+  "title_it": "LA SAGRA",
+  "caption": "Sagra je místní slavnost, často spojená s jídlem, sezónním produktem nebo tradicí obce. Sagra della castagna je kaštanová slavnost. Caldarroste znamená pečené kaštany — užitečné slovo, až tě přiláká vůně ze stánku. Které jídlo bys rád/a ochutnal/a na místní slavnosti?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
+  "alt_text": "Zelená výuková kartička. LA SAGRA — Místní slavnost."
+ }
+]

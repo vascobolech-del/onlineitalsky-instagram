@@ -1,0 +1,46 @@
+name: Instagram – Online Italsky
+
+on:
+  schedule:
+    # Každý den 16:07–18:37 UTC (= kolem 17–19 h v Praze, v létě i v zimě).
+    # Skript zveřejní jen příspěvek, jehož termín (18:00 pražského času) už nastal.
+    - cron: "7,37 16-18 * * *"
+  workflow_dispatch:
+    inputs:
+      rezim:
+        description: "test = jen ověřit spojení · publikovat-ted = zveřejnit další příspěvek hned · nanecisto = ukázat, co by se stalo"
+        type: choice
+        options: [test, nanecisto, publikovat-ted]
+        default: test
+
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram
+  cancel-in-progress: false
+
+jobs:
+  zverejnit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Zveřejnit příspěvek na řadě
+        run: python3 scripts/publish.py
+        env:
+          MODE: ${{ github.event.inputs.rezim || 'plan' }}
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ vars.IG_USER_ID }}
+
+      - name: Zapsat zveřejněný příspěvek
+        if: always()
+        run: |
+          if ! git diff --quiet -- odeslano.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add odeslano.json
+            git commit -m "Instagram: zveřejněn další příspěvek"
+            git push
+          fi
