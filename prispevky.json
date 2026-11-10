@@ -41,7 +41,7 @@
  },
  {
   "id": 6,
-  "datum": "2026-12-23 18:00",
+  "datum": "2026-12-22 18:00",
   "filename": "06_ma-dai.jpg",
   "title_it": "MA DAI!",
   "caption": "Ma dai! může být překvapené „Fakt?“ i nevěřícné „Ale jdi!“ Na Ho vinto due biglietti. — „Vyhrál/a jsem dva lístky.“ můžeš reagovat Ma dai, davvero? Stejná slova s ostrým tónem mohou tvrzení odmítat. Zkus je říct jednou nadšeně a jednou pochybovačně.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
@@ -49,7 +49,7 @@
  },
  {
   "id": 7,
-  "datum": "2026-12-30 18:00",
+  "datum": "2026-12-29 18:00",
   "filename": "07_nono-nonno.jpg",
   "title_it": "NONO / NONNO",
   "caption": "NONO znamená devátý, NONNO dědeček. Dvojité N není ozdoba: souhláska musí trvat déle, bez vložené samohlásky. Il nonno aspetta. = Dědeček čeká. Zkus oba výrazy nahlas a hlídej délku N.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
@@ -97,7 +97,7 @@
  },
  {
   "id": 13,
-  "datum": "2027-02-09 18:00",
+  "datum": "2027-02-11 18:00",
   "filename": "13_la-mano.jpg",
   "title_it": "LA MANO",
   "caption": "LA MANO je ruka. Koncovka -O tentokrát neznamená mužský rod: říkáme la mano fredda, tedy studená ruka. Nová podstatná jména si ukládej i se členem. Zkus si vybavit další slovo s LA.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
@@ -129,7 +129,7 @@
  },
  {
   "id": 17,
-  "datum": "2027-03-09 18:00",
+  "datum": "2027-03-10 18:00",
   "filename": "17_vecchio-amico-amico-vecchio.jpg",
   "title_it": "VECCHIO AMICO / AMICO VECCHIO",
   "caption": "UN VECCHIO AMICO je dávný kamarád, kterého znáš už dlouho. UN AMICO VECCHIO zdůrazňuje, že je kamarád starý věkem. U slova vecchio tedy pořadí mění význam. Jak bys popsal/a kamaráda ze školy?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
@@ -225,7 +225,7 @@
  },
  {
   "id": 29,
-  "datum": "2027-06-01 18:00",
+  "datum": "2027-05-31 18:00",
   "filename": "29_sono-le-sei-e-mezzo.jpg",
   "title_it": "SONO LE SEI E MEZZO.",
   "caption": "SONO LE SEI E MEZZO znamená „je půl sedmé“, tedy 6:30. Italština vychází ze šesté hodiny a přidá půlku; čeština už jmenuje sedmou. Správná je také podoba e mezza. Jak řekneš 8:30?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
@@ -414,5 +414,141 @@
   "title_it": "LA SAGRA",
   "caption": "Sagra je místní slavnost, často spojená s jídlem, sezónním produktem nebo tradicí obce. Sagra della castagna je kaštanová slavnost. Caldarroste znamená pečené kaštany — užitečné slovo, až tě přiláká vůně ze stánku. Které jídlo bys rád/a ochutnal/a na místní slavnosti?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk",
   "alt_text": "Zelená výuková kartička. LA SAGRA — Místní slavnost."
+ },
+ {
+  "id": 101,
+  "datum": "2026-11-29 18:00",
+  "filename": "s01_lavvento.jpg",
+  "title_it": "L’AVVENTO",
+  "caption": "Dnes začíná L’AVVENTO – advent. První adventní neděle je la prima domenica d’Avvento a na věnci zapalujeme první svíčku: accendiamo la prima candela. Jak řekneš „druhá adventní neděle“?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk #avvento",
+  "alt_text": "Zelená výuková kartička. L’AVVENTO — advent",
+  "tema": "1. adventní neděle"
+ },
+ {
+  "id": 102,
+  "datum": "2026-12-05 18:00",
+  "filename": "s02_san-nicola.jpg",
+  "title_it": "SAN NICOLA",
+  "caption": "Zítra slaví Itálie SAN NICOLA – svatého Mikuláše. Nejznámější je v Bari, kde jsou uloženy jeho ostatky, a v Terstu nebo v Trentinu nosí dětem dárky. Anděl je l’angelo, čert il diavolo. Byl/a jsi letos buono/buona, nebo cattivo/cattiva?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk #sannicola",
+  "alt_text": "Zelená výuková kartička. SAN NICOLA — svatý Mikuláš",
+  "tema": "Mikuláš"
+ },
+ {
+  "id": 103,
+  "datum": "2026-12-06 18:00",
+  "filename": "s03_corona-davvento.jpg",
+  "title_it": "LA CORONA D’AVVENTO",
+  "caption": "Druhá adventní neděle – la seconda domenica d’Avvento. Na adventním věnci, la corona d’Avvento, dnes hoří už due candele, dvě svíčky. Kolik svíček bude hořet příští neděli? Napiš to italsky.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk #avvento",
+  "alt_text": "Zelená výuková kartička. LA CORONA D’AVVENTO — adventní věnec",
+  "tema": "2. adventní neděle"
+ },
+ {
+  "id": 104,
+  "datum": "2026-12-13 18:00",
+  "filename": "s04_santa-lucia.jpg",
+  "title_it": "SANTA LUCIA",
+  "caption": "13. prosince slaví sever Itálie SANTA LUCIA. V Bergamu, Brescii nebo Veroně nosí dětem dárky v noci z 12. na 13. prosince a jezdí na oslíkovi, l’asinello. Děti jí nechávají něco dobrého a oslíkovi seno, il fieno. Je to zároveň třetí adventní neděle – la terza domenica d’Avvento.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk #santalucia",
+  "alt_text": "Zelená výuková kartička. SANTA LUCIA — svatá Lucie",
+  "tema": "sv. Lucie + 3. advent"
+ },
+ {
+  "id": 105,
+  "datum": "2026-12-24 10:00",
+  "filename": "s05_vigilia-di-natale.jpg",
+  "title_it": "LA VIGILIA DI NATALE",
+  "caption": "Štědrý den je italsky LA VIGILIA DI NATALE. Italové ho slaví hlavně společnou večeří, la cena della Vigilia, často s rybou, a dárky děti většinou rozbalují až ráno 25. prosince. Přejeme vám BUON NATALE! – Veselé Vánoce!\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk #buonnatale",
+  "alt_text": "Červená výuková kartička. LA VIGILIA DI NATALE — Štědrý den",
+  "tema": "Štědrý den"
+ },
+ {
+  "id": 106,
+  "datum": "2026-12-31 14:00",
+  "filename": "s06_buon-anno.jpg",
+  "title_it": "BUON ANNO!",
+  "caption": "Silvestr je italsky San Silvestro a Nový rok Capodanno. O půlnoci si přejeme BUON ANNO! K večeři, il cenone, patří čočka, le lenticchie – prý přináší peníze. Co si přeješ do nového roku? Napiš to italsky.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk #capodanno",
+  "alt_text": "Zelená výuková kartička. BUON ANNO! — Šťastný nový rok!",
+  "tema": "Silvestr"
+ },
+ {
+  "id": 107,
+  "datum": "2027-01-06 18:00",
+  "filename": "s07_la-befana.jpg",
+  "title_it": "LA BEFANA",
+  "caption": "6. ledna přilétá LA BEFANA, hodná stará čarodějnice na koštěti. Hodným dětem nechá v punčoše, la calza, sladkosti, zlobivým uhlí, il carbone – dnes už většinou cukrové. Italové říkají: L’Epifania tutte le feste porta via. = Tři králové všechny svátky odnesou.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk #befana",
+  "alt_text": "Zelená výuková kartička. LA BEFANA — Befana",
+  "tema": "Tři králové (Epifania)"
+ },
+ {
+  "id": 108,
+  "datum": "2027-02-09 18:00",
+  "filename": "s08_il-carnevale.jpg",
+  "title_it": "IL CARNEVALE",
+  "caption": "Dnes je martedì grasso, masopustní úterý a vrchol IL CARNEVALE. Nejslavnější je v Benátkách s maskami, le maschere. Italové říkají: A Carnevale ogni scherzo vale. = O masopustu se smí každý žert. Jakou masku by sis vybral/a?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk #carnevale",
+  "alt_text": "Zelená výuková kartička. IL CARNEVALE — karneval / masopust",
+  "tema": "masopustní úterý"
+ },
+ {
+  "id": 109,
+  "datum": "2027-02-14 18:00",
+  "filename": "s09_ti-amo.jpg",
+  "title_it": "TI AMO / TI VOGLIO BENE",
+  "caption": "Na San Valentino se hodí TI AMO – miluji tě. Patří hlavně partnerovi nebo partnerce. Rodině a přátelům řekneš TI VOGLIO BENE – mám tě rád/a. Komu dnes řekneš ti voglio bene?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk #sanvalentino",
+  "alt_text": "Červená výuková kartička. TI AMO — miluji tě / TI VOGLIO BENE — mám tě rád/a",
+  "tema": "Valentýn"
+ },
+ {
+  "id": 110,
+  "datum": "2027-03-08 18:00",
+  "filename": "s10_festa-della-donna.jpg",
+  "title_it": "LA FESTA DELLA DONNA",
+  "caption": "8. března je LA FESTA DELLA DONNA. V Itálii se ženám dávají žluté květy mimózy, la mimosa. Přání zní: Auguri a tutte le donne! = Všechno nejlepší všem ženám! Komu dnes dáš mimózu?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk #festadelladonna",
+  "alt_text": "Zelená výuková kartička. LA FESTA DELLA DONNA — Mezinárodní den žen",
+  "tema": "MDŽ"
+ },
+ {
+  "id": 111,
+  "datum": "2027-03-28 18:00",
+  "filename": "s11_buona-pasqua.jpg",
+  "title_it": "BUONA PASQUA!",
+  "caption": "Velikonoce jsou la Pasqua a přeje se BUONA PASQUA! Na stole nechybí čokoládové vejce s překvapením, l’uovo di Pasqua, a sladká holubice, la colomba. V pondělí přichází la Pasquetta – výlet s přáteli. Kam bys vyrazil/a na Pasquettu?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk #pasqua",
+  "alt_text": "Zelená výuková kartička. BUONA PASQUA! — Veselé Velikonoce!",
+  "tema": "Velikonoční neděle"
+ },
+ {
+  "id": 112,
+  "datum": "2027-06-02 18:00",
+  "filename": "s12_festa-della-repubblica.jpg",
+  "title_it": "LA FESTA DELLA REPUBBLICA",
+  "caption": "2. června slaví Itálie LA FESTA DELLA REPUBBLICA. Připomíná referendum z roku 1946, ve kterém Italové zvolili republiku místo monarchie. Nad Římem létají Frecce Tricolori a kreslí na nebe trikolóru, il tricolore. Jak se italsky řekne vlajka? La bandiera.\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk #festadellarepubblica",
+  "alt_text": "Zelená výuková kartička. LA FESTA DELLA REPUBBLICA — Den republiky",
+  "tema": "Den republiky"
+ },
+ {
+  "id": 113,
+  "datum": "2027-08-15 18:00",
+  "filename": "s13_ferragosto.jpg",
+  "title_it": "FERRAGOSTO",
+  "caption": "15. srpna je FERRAGOSTO, vrchol italského léta. Města se vyprázdní, všichni jsou al mare, u moře, nebo in montagna, na horách, a spousta obchodů má chiuso per ferie – zavřeno kvůli dovolené. Kam bys jel/a na Ferragosto?\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk #ferragosto",
+  "alt_text": "Zelená výuková kartička. FERRAGOSTO — italský svátek 15. srpna",
+  "tema": "Ferragosto"
+ },
+ {
+  "id": 114,
+  "datum": null,
+  "filename": "s14_la-prima-neve.jpg",
+  "title_it": "LA PRIMA NEVE",
+  "caption": "Na horách napadl první pořádný sníh – LA PRIMA NEVE! Sněží = nevica. Sněhulák je il pupazzo di neve a lyžovat se řekne sciare. Vyrážíš na hory? Vado in montagna a sciare!\n\n#onlineitalsky #italskyhrave #italstina #italie #italskyjazyk #neve",
+  "alt_text": "Zelená výuková kartička. LA PRIMA NEVE — první sníh",
+  "tema": "První velký sníh na horách",
+  "podminka": {
+   "typ": "snih",
+   "misto": "Krkonoše (Špindlerův Mlýn)",
+   "lat": 50.726,
+   "lon": 15.609,
+   "min_cm_24h": 15,
+   "od": "2026-11-20",
+   "do": "2027-02-28"
+  },
+  "cas": "18:00"
  }
 ]

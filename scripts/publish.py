@@ -29,6 +29,7 @@ IG_USERNAME = os.environ.get("IG_USERNAME", "onlineitalsky").strip()
 FB_ENABLED = os.environ.get("FACEBOOK", "1").strip() not in ("0", "ne", "false", "")
 FB_PAGE_ID = os.environ.get("FB_PAGE_ID", "").strip()
 FB_MAX_ATTEMPTS = 3
+METEO = os.environ.get("METEO_URL", "https://api.open-meteo.com/v1/forecast")
 
 
 def log(msg):
@@ -195,19 +196,61 @@ def publish(ig, p):
     return {"media_id": media_id, "permalink": permalink}
 
 
+def snow_24h(cond):
+    """Součet nového sněhu (cm) za posledních 24 hodin v daném místě podle Open-Meteo."""
+    q = urllib.parse.urlencode({"latitude": cond["lat"], "longitude": cond["lon"], "hourly": "snowfall",
+                                "past_hours": 24, "forecast_hours": 1, "timezone": "Europe/Prague"})
+    try:
+        with urllib.request.urlopen(f"{METEO}?{q}", timeout=30) as r:
+            data = json.load(r)["hourly"]
+    except Exception as e:  # noqa: BLE001
+        log(f"::warning::Počasí se nepodařilo načíst ({e}), zkusím to při dalším běhu.")
+        return None
+    limit = now().strftime("%Y-%m-%dT%H:%M")
+    return round(sum(v or 0 for tm, v in zip(data["time"], data["snowfall"]) if tm <= limit), 1)
+
+
+def check_conditions(triggered, state, t, mode):
+    """Vyhodnotí příspěvky vázané na počasí; zjištěné splnění si zapamatuje ve stavu."""
+    today = t.date().isoformat()
+    for p in triggered:
+        c, st = p["podminka"], state.setdefault(str(p["id"]), {})
+        if st.get("zjisteno") or st.get("vynechano"):
+            continue
+        if today > c["do"]:
+            st["vynechano"] = today
+            log(f"#{p['id']} {p['title_it']}: podmínka do {c['do']} nenastala, příspěvek vynechávám.")
+            continue
+        if today < c["od"] and mode != "test":
+            continue
+        cm = snow_24h(c)
+        if cm is None:
+            continue
+        log(f"#{p['id']} {p['title_it']}: {c['misto']} – nový sníh za 24 h {cm} cm (potřeba {c['min_cm_24h']} cm).")
+        if cm >= c["min_cm_24h"] and today >= c["od"] and mode != "test":
+            st["zjisteno"] = today
+            log(f"Podmínka splněna – #{p['id']} vyjde dnes v {p.get('cas', '18:00')} (nebo v nejbližší volný den).")
+
+
 def main():
-    posts = sorted(json.loads((ROOT / "prispevky.json").read_text("utf-8")), key=when)
+    all_posts = json.loads((ROOT / "prispevky.json").read_text("utf-8"))
+    posts_by_id = {p["id"]: p for p in all_posts}
+    dated = sorted([p for p in all_posts if p.get("datum")], key=when)
+    triggered = [p for p in all_posts if not p.get("datum") and p.get("podminka")]
     sent_path = ROOT / "odeslano.json"
     sent = json.loads(sent_path.read_text("utf-8") or "{}")
-    posts_by_id = {p["id"]: p for p in posts}
+    state = sent.setdefault("_podminky", {})
+    records = lambda: {k: v for k, v in sent.items() if not k.startswith("_")}  # noqa: E731
     t = now()
+    today = t.date().isoformat()
 
     def save():
         sent_path.write_text(json.dumps(sent, ensure_ascii=False, indent=1) + "\n", "utf-8")
 
     # Dořešit Facebook u posledního příspěvku, pokud se tam minule nepovedl.
-    if FB_ENABLED and TOKEN and MODE in ("plan", "publikovat-ted") and sent:
-        last = max(sent, key=lambda k: sent[k].get("cas", ""))
+    recs = records()
+    if FB_ENABLED and TOKEN and MODE in ("plan", "publikovat-ted") and recs:
+        last = max(recs, key=lambda k: recs[k].get("cas", ""))
         rec = sent[last]
         if not rec.get("fb_post_id") and rec.get("fb_pokusy", 0) < FB_MAX_ATTEMPTS:
             log(f"Zkouším znovu Facebook u příspěvku #{last}.")
@@ -216,15 +259,20 @@ def main():
                 fail(f"Facebook u příspěvku #{last} se ani napodruhé nepovedl "
                      f"(pokus {rec['fb_pokusy']}/{FB_MAX_ATTEMPTS}).")
             save()
-    pending = [p for p in posts if str(p["id"]) not in sent]
-    log(f"Teď je {t:%d.%m.%Y %H:%M} (Praha). Zveřejněno {len(sent)}/{len(posts)}.")
-    if not pending:
-        log("Všechny příspěvky jsou zveřejněné.")
-        return
-    nxt = pending[0]
-    log(f"Další na řadě: #{nxt['id']} {nxt['title_it']} – {when(nxt):%d.%m.%Y %H:%M}")
+
+    pending = [p for p in dated if str(p["id"]) not in sent]
+    log(f"Teď je {t:%d.%m.%Y %H:%M} (Praha). Zveřejněno {len(records())}/{len(all_posts)}.")
+    if pending:
+        log(f"Další podle data: #{pending[0]['id']} {pending[0]['title_it']} – {when(pending[0]):%d.%m.%Y %H:%M}")
+
+    open_triggered = [p for p in triggered if str(p["id"]) not in sent]
+    before = json.dumps(state, sort_keys=True)
+    check_conditions(open_triggered, state, t, MODE)
+    if MODE not in ("test", "nanecisto") and json.dumps(state, sort_keys=True) != before:
+        save()
 
     if MODE == "test":
+        nxt = pending[0] if pending else (open_triggered[0] if open_triggered else None)
         if not TOKEN:
             fail("Chybí secret IG_TOKEN.")
         ig = find_ig_user()
@@ -236,7 +284,7 @@ def main():
             log(f"Limit publikování: {lim}")
         except SystemExit:
             log("::warning::Limit publikování se nepodařilo načíst (nevadí).")
-        if not check_image(image_url(nxt)):
+        if nxt and not check_image(image_url(nxt)):
             fail("Obrázek není veřejně dostupný – zkontrolujte, že je repozitář Public.")
         if FB_ENABLED:
             page = find_page()
@@ -248,17 +296,29 @@ def main():
         log("Test v pořádku. Nic nebylo zveřejněno.")
         return
 
-    if MODE != "publikovat-ted":
-        if when(nxt) > t:
-            log("Zatím není čas, končím.")
+    nxt = None
+    if MODE == "publikovat-ted":
+        nxt = pending[0] if pending else None
+    else:
+        if any(v.get("cas", "").startswith(today) for v in records().values()):
+            log("Dnes už byl jeden příspěvek zveřejněn, další počká.")
             return
-        today = t.date().isoformat()
-        if any(v.get("cas", "").startswith(today) for v in sent.values()):
-            log("Dnes už byl jeden příspěvek zveřejněn, zbytek počká na zítřek.")
-            return
-        late = (t - when(nxt)).total_seconds() / 3600
-        if late > 24:
-            log(f"::warning::Příspěvek #{nxt['id']} je zpožděný o {late / 24:.1f} dne – zveřejňuji teď.")
+        if pending and when(pending[0]) <= t:
+            nxt = pending[0]
+            late = (t - when(nxt)).total_seconds() / 3600
+            if late > 24:
+                log(f"::warning::Příspěvek #{nxt['id']} je zpožděný o {late / 24:.1f} dne – zveřejňuji teď.")
+        else:
+            busy_today = any(p["datum"][:10] == today for p in pending)
+            for p in open_triggered:
+                st = state.get(str(p["id"]), {})
+                hhmm = p.get("cas", "18:00")
+                if st.get("zjisteno") and not busy_today and t.strftime("%H:%M") >= hhmm:
+                    nxt = p
+                    break
+    if not nxt:
+        log("Zatím není čas, končím.")
+        return
 
     if MODE == "nanecisto":
         log(f"[nanečisto] Zveřejnil bych #{nxt['id']} s obrázkem {image_url(nxt)}")

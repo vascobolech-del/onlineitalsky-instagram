@@ -2,9 +2,9 @@ name: Instagram – Online Italsky
 
 on:
   schedule:
-    # Každý den 16:07–18:37 UTC (= kolem 17–19 h v Praze, v létě i v zimě).
-    # Skript zveřejní jen příspěvek, jehož termín (18:00 pražského času) už nastal.
-    - cron: "7,37 16-18 * * *"
+    # Každý den 7:07–18:37 UTC (= zhruba 8–20 h v Praze, v létě i v zimě), dvakrát za hodinu.
+    # Skript zveřejní jen příspěvek, jehož termín (pražský čas) už nastal; ostatní běhy hned skončí.
+    - cron: "7,37 7-18 * * *"
   workflow_dispatch:
     inputs:
       rezim:
