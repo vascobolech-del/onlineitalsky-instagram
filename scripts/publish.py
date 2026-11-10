@@ -37,7 +37,7 @@ def fail(msg):
     sys.exit(1)
 
 
-def api(method, path, params=None):
+def api(method, path, params=None, fatal=True):
     base = f"{GRAPH}/{VERSION}" if VERSION else GRAPH
     params = dict(params or {})
     params["access_token"] = TOKEN
@@ -51,6 +51,9 @@ def api(method, path, params=None):
             return json.load(r)
     except urllib.error.HTTPError as e:
         body = e.read().decode(errors="replace")
+        if not fatal:
+            log(f"(info) {method} {path} → HTTP {e.code}: {body[:300]}")
+            return {}
         fail(f"Instagram API {method} {path} → HTTP {e.code}: {body}")
 
 
@@ -73,16 +76,25 @@ def image_url(p):
 
 
 def find_ig_user():
+    """Najde ID Instagram účtu. Zkouší token přes facebookovou stránku i přímo přiřazené účty."""
     if IG_USER_ID:
         return IG_USER_ID
-    res = api("GET", "me/accounts", {"fields": "name,instagram_business_account{id,username}"})
-    found = [a["instagram_business_account"] for a in res.get("data", []) if a.get("instagram_business_account")]
+    found = []
+    res = api("GET", "me/accounts", {"fields": "name,instagram_business_account{id,username}"}, fatal=False)
+    found += [a["instagram_business_account"] for a in res.get("data", []) if a.get("instagram_business_account")]
+    if not found:
+        for path in ("me/assigned_instagram_accounts", "me/instagram_accounts"):
+            res = api("GET", path, {"fields": "id,username"}, fatal=False)
+            found += [a for a in res.get("data", []) if a.get("id")]
+            if found:
+                break
     for acc in found:
         log(f"Nalezen Instagram účet @{acc.get('username')} (ID {acc['id']})")
-    match = [a for a in found if a.get("username", "").lower() == IG_USERNAME.lower()] or found
+    match = [a for a in found if (a.get("username") or "").lower() == IG_USERNAME.lower()] or found
     if len(match) != 1:
-        fail("Nepodařilo se jednoznačně najít Instagram účet. Zkontrolujte, že systémový uživatel má přiřazenou "
-             "facebookovou stránku propojenou s @" + IG_USERNAME + ", případně nastavte proměnnou IG_USER_ID.")
+        fail("Nepodařilo se automaticky najít Instagram účet. V repozitáři nastavte Settings → Secrets and variables → "
+             "Actions → Variables → New repository variable: IG_USER_ID = ID účtu @" + IG_USERNAME +
+             " (najdete ho v Meta Business → Nastavení → Účty → Instagramové účty).")
     return match[0]["id"]
 
 
