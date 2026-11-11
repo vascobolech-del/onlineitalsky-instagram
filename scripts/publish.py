@@ -28,6 +28,7 @@ IG_USER_ID = os.environ.get("IG_USER_ID", "").strip()
 IG_USERNAME = os.environ.get("IG_USERNAME", "onlineitalsky").strip()
 FB_ENABLED = os.environ.get("FACEBOOK", "1").strip() not in ("0", "ne", "false", "")
 FB_PAGE_ID = os.environ.get("FB_PAGE_ID", "").strip()
+FB_PAGE_MATCH = os.environ.get("FB_PAGE_MATCH", "ital").strip().lower()
 FB_MAX_ATTEMPTS = 3
 METEO = os.environ.get("METEO_URL", "https://api.open-meteo.com/v1/forecast")
 
@@ -80,39 +81,38 @@ def image_url(p):
 
 
 def find_ig_user():
-    """Najde ID Instagram účtu. Zkouší token přes facebookovou stránku i přímo přiřazené účty."""
+    """Najde ID Instagram účtu IG_USERNAME. Jiný účet nikdy nepoužije – radši skončí chybou."""
     if IG_USER_ID:
+        name = api("GET", IG_USER_ID, {"fields": "username"}).get("username", "")
+        if name.lower() != IG_USERNAME.lower():
+            fail(f"IG_USER_ID patří účtu @{name}, ale tento repozitář zveřejňuje na @{IG_USERNAME}. Nic nezveřejňuji.")
         return IG_USER_ID
     found = []
     res = api("GET", "me/accounts", {"fields": "name,instagram_business_account{id,username}"}, fatal=False)
     found += [a["instagram_business_account"] for a in res.get("data", []) if a.get("instagram_business_account")]
-    if not found:
-        for path in ("me/assigned_instagram_accounts", "me/instagram_accounts"):
-            res = api("GET", path, {"fields": "id,username"}, fatal=False)
-            found += [a for a in res.get("data", []) if a.get("id")]
-            if found:
-                break
-    for acc in found:
-        log(f"Nalezen Instagram účet @{acc.get('username')} (ID {acc['id']})")
-    match = [a for a in found if (a.get("username") or "").lower() == IG_USERNAME.lower()] or found
+    for path in ("me/assigned_instagram_accounts", "me/instagram_accounts"):
+        res = api("GET", path, {"fields": "id,username"}, fatal=False)
+        found += [a for a in res.get("data", []) if a.get("id")]
+    for acc in {a["id"]: a for a in found}.values():
+        log(f"Token vidí Instagram účet @{acc.get('username')} (ID {acc['id']})")
+    match = {a["id"]: a for a in found if (a.get("username") or "").lower() == IG_USERNAME.lower()}
     if len(match) != 1:
-        fail("Nepodařilo se automaticky najít Instagram účet. V repozitáři nastavte Settings → Secrets and variables → "
-             "Actions → Variables → New repository variable: IG_USER_ID = ID účtu @" + IG_USERNAME +
-             " (najdete ho v Meta Business → Nastavení → Účty → Instagramové účty).")
-    return match[0]["id"]
+        fail(f"Token nemá přístup k Instagram účtu @{IG_USERNAME}. Přiřaďte ho systémovému uživateli v Meta Business "
+             "(Účty → Instagramové účty, oprávnění Obsah). Na jiný účet nic nezveřejňuji.")
+    return next(iter(match))
 
 
 def find_page():
-    """Vrátí (id, název, token stránky) facebookové stránky, nebo None."""
+    """Vrátí (id, název, token stránky) facebookové stránky, jejíž název obsahuje FB_PAGE_MATCH, nebo None."""
     if FB_PAGE_ID:
         res = api("GET", FB_PAGE_ID, {"fields": "name,access_token"}, fatal=False)
         return (FB_PAGE_ID, res.get("name"), res.get("access_token")) if res.get("access_token") else None
     res = api("GET", "me/accounts", {"fields": "name,access_token"}, fatal=False)
     pages = [a for a in res.get("data", []) if a.get("access_token")]
-    match = [a for a in pages if "ital" in (a.get("name") or "").lower()] or pages
+    match = [a for a in pages if FB_PAGE_MATCH in (a.get("name") or "").lower()]
     if len(match) != 1:
         if pages:
-            log("Nalezené stránky: " + ", ".join(f"{a.get('name')} ({a['id']})" for a in pages))
+            log("Token vidí stránky: " + ", ".join(f"{a.get('name')} ({a['id']})" for a in pages))
         return None
     return match[0]["id"], match[0].get("name"), match[0]["access_token"]
 
